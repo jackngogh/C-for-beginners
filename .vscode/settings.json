@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "**/bootstrap/**/*.html": "html",
+        "**/html/**/*.html": "html",
+        "iostream": "cpp"
+    }
+}
