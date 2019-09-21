@@ -2,6 +2,7 @@
 using namespace std;
 
 double power(double base, int exponent);
+void print_power(double base, int exponent);
 
 int main()
 {
@@ -10,8 +11,9 @@ int main()
     cin >> base;
     cout << "What is the exponent?: ";
     cin >> exponent;
-    double result = power(base, exponent);
-    cout << result << endl;
+    // double result = power(base, exponent);
+    // cout << result << endl;
+    print_power(base, exponent);
     return 0;
 }
 
@@ -23,4 +25,10 @@ double power(double base, int exponent)
         result *= base;
     }
     return result;
+}
+
+void print_power(double base, int exponent)
+{
+    double result = power(base, exponent);
+    cout << "base: " << base << "\nexponent: " << exponent << "\nResult: " << result << endl;
 }
